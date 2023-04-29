@@ -1,16 +1,74 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<title>Semantic Navbar with Audio Files</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		nav {
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+		}
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		nav li {
+			margin: 0 10px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+			padding: 10px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+		nav a:hover {
+			background-color: #fff;
+			color: #333;
+		}
+		h3 {
+			margin-top: 20px;
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+		}
+		audio {
+			display: block;
+			margin: 20px auto;
+			width: 80%;
+			max-width: 500px;
+		}
+	</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+	<nav>
+		<h1>My Website</h1>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+	<h3>Random Audios</h3>
+	<audio controls>
+		<source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+	</audio>
+	<audio controls>
+		<source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+	</audio>
+	<audio controls>
+		<source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+	</audio>
 </body>
-
 </html>
